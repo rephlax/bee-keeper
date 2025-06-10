@@ -4,54 +4,86 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Vite + TS</title>
+		<link rel="stylesheet" href="./src/styles.css" />
+		<title>Lottie's Bees - Natural Honey & Beekeeping</title>
 	</head>
 	<body>
 		<div id="app">
-			<header>
-				<div id="header-container">
-					<image id="header-logo" alt=" Website logo" />
-					<nav id="header-nav">
-						<ul id="nav-links">
-							<li id="top-btn" class="nav-link">About Lottie</li>
-							<!-- This will be the button will be the About section button that will change to to the top at the bottom. -->
-							<li class="nav-link">The hive</li>
-							<li class="nav-link">What's on offer</li>
-							<li class="nav-link">Contact Me!</li>
+			<!-- Simplified header -->
+			<header id="main-header">
+				<div class="header-content">
+					<img class="logo" alt="Lottie's Bees logo" src="./public/bees.svg" />
+					<nav class="main-nav">
+						<ul class="nav-list">
+							<li><a href="#about" class="nav-link">About</a></li>
+							<li><a href="#hive" class="nav-link">Hive</a></li>
+							<li><a href="#explore" class="nav-link">Explore</a></li>
+							<li><a href="#contact" class="nav-link">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
 			</header>
 
 			<main>
-				<div id="main-container">
-					<section id="hero-container">
-						<!-- This will be for the gradient going from a nice honey yellow colour to transparent or a low alpha for the image-->
-						<div id="hero-img-container">
-							<img alt="Lottie holding bees" id="hero-img" />
-						</div>
-						<div id="hero-info-container">
-							<h1 id="hero-info-title">Lottie's Bees</h1>
-							<p id="hero-info-text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Quisquam, repellat rerum? Ipsam, enim alias autem, pariatur sint
-								eveniet ut aut dolore rem sit ab placeat fuga sed inventore
-								neque quo!
+				<!-- Modern hero section -->
+				<section class="hero">
+					<div class="hero-background">
+						<img
+							src="./public/bees-hero.png"
+							alt="Lottie with bees in the garden"
+							class="hero-image"
+						/>
+						<div class="hero-overlay"></div>
+					</div>
+
+					<div class="hero-content">
+						<div class="hero-text">
+							<h1 class="hero-title">
+								<span class="hero-title-small">Welcome to</span>
+								<span class="hero-title-main">Lottie's Bees</span>
+							</h1>
+							<p class="hero-description">
+								Discover the sweet world of sustainable beekeeping. From our
+								family hives to your table, experience pure, raw honey crafted
+								by nature and nurtured with love.
 							</p>
+							<div class="hero-actions">
+								<button class="btn btn-primary">Explore Our Honey</button>
+								<button class="btn btn-secondary">Book a Hive Tour</button>
+							</div>
 						</div>
-					</section>
-					<section id="hive-container">
-						<image id="hive-image" alt="Picture of a bee hive" />
-						<!-- Buttons to go here -->
-					</section>
-					<section id="whats-on-section">
-						<!-- Honey comb area with different pictures in, like jar of honey, something for a tour and so on -->
-					</section>
-				</div>
+					</div>
+
+					<!-- Decorative hexagon pattern -->
+					<div class="hex-pattern"></div>
+				</section>
+
+				<!-- Rest of the sections -->
+				<section id="about" class="section">
+					<div class="container">
+						<h2>About Our Bees</h2>
+						<!-- Content here -->
+					</div>
+				</section>
+
+				<section id="hive" class="section">
+					<div class="container">
+						<h2>The Hive</h2>
+						<!-- Content here -->
+					</div>
+				</section>
+
+				<section id="explore" class="section">
+					<div class="container">
+						<h2>Explore</h2>
+						<!-- Honey comb area with different pictures -->
+					</div>
+				</section>
 			</main>
 
-			<footer></footer>
+			<footer>
+				<!-- Footer content -->
+			</footer>
 		</div>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
